@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+main{
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#carosello{
+    border: 2px solid purple;
+    position: relative;
+}
+
+#carosello figure{
+    position: relative;
+}
+
+#carosello figure div{
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    color: green;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+figure img{
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.fa-chevron-right,
+.fa-chevron-left{
+    position: absolute;
+    cursor: pointer;
+}
+
+.fa-chevron-left{
+    left: 30px;
+    top: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.fa-chevron-right{
+    right: 0px;
+    top: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 1;
+}
